@@ -1,0 +1,116 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        h2 {
+            font-size: 1.75rem;
+            color: #1a202c;
+            border-bottom: 3px solid #4299e1;
+            padding-bottom: 8px;
+            margin-bottom: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #f7fafc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: #4299e1;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        tr:nth-child(even) {
+            background-color: #edf2f7;
+        }
+        tr:hover {
+            background-color: #bee3f8;
+            transition: background-color 0.2s;
+        }
+        /* Style cho phân trang Laravel */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        .pagination li {
+            margin: 0 4px;
+        }
+        .pagination li a, .pagination li span {
+            display: inline-block;
+            padding: 8px 12px;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #2b6cb0;
+        }
+        .pagination li.active span {
+            background-color: #2b6cb0;
+            color: white;
+            border-color: #2b6cb0;
+        }
+        .pagination li.disabled span {
+            color: #a0aec0;
+        }
+        .pagination {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px; /* Thêm khoảng cách phía trên */
+        }
+
+        .page-item {
+            margin: 0 4px;
+        }
+
+        .page-item .page-link {
+            display: inline-block;
+            padding: 8px 12px;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #2b6cb0;
+            line-height: 1.2; /* Cải thiện căn chỉnh văn bản */
+        }
+
+        .page-item.active .page-link {
+            background-color: #2b6cb0;
+            color: white;
+            border-color: #2b6cb0;
+        }
+
+        .page-item.disabled .page-link {
+            color: #a0aec0;
+            pointer-events: none; /* Không thể nhấp vào */
+            background-color: #f7fafc;
+        }
+
+        /* Ẩn các ký tự lỗi nếu chúng vẫn còn */
+        .pagination svg {
+            display: none;
+        }
+        /* Hoặc thử thêm style cho dấu mũi tên nếu muốn: */
+        .page-link span {
+            font-size: 14px; /* Kích thước chữ */
+        }
